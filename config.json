@@ -1,0 +1,32 @@
+{
+    "pack": {
+        "cache": [
+            {
+                "engine": "redis",
+                "host": "127.0.0.1",
+                "port": 6379
+            }
+        ]
+    },
+    "servers": [
+        {
+            "host": "0.0.0.0",
+            "port": 8080,
+            "options": {
+                "labels": ["http", "web"]
+            }
+        }
+    ],
+    "plugins": {
+        "hapi-plugin-test": {},
+        "hapi-plugin-djStatic": {},
+        "hapi-plugin-djProxy": { },
+        "good": {
+            "monitor": {
+                "subscribers": {
+                    "console": ["ops", "request", "log", "error"]
+                }
+            }
+        }
+    }
+}

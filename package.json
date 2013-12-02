@@ -1,0 +1,17 @@
+{
+    "name": "djODdataServer",
+    "version": "0.1.1",
+    "engines": {
+        "node": ">=0.10.0"
+    },
+    "dependencies": {
+        "install": "~0.1.7",
+        "lodash": "~2.4.0",
+        "redis": "~0.9.1",
+        "hapi": "~1.20.0",
+        "good": "~0.12.3",
+        "hapi-plugin-test": "git://github.com/spumko/hapi-plugin-test.git",
+        "hapi-plugin-djProxy": "git://github.com/RainerAtSpirit/hapi-plugin-djProxy.git#0.1.1",
+        "hapi-plugin-djStatic": "git://github.com/RainerAtSpirit/hapi-plugin-djStatic.git#0.1.0"
+    }
+}
