@@ -1,0 +1,7 @@
+.idea
+npm-debug.log
+node_modules
+Berksfile
+Berksfile.lock
+Vagrantfile
+
